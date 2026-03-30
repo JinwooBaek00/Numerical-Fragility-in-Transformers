@@ -1,0 +1,12 @@
+{
+  "run_tag": "default",
+  "source_experiment": "../e2_predictor",
+  "target_precisions": ["bf16", "fp16"],
+  "sequence_lengths": [128, 512, 1024],
+  "seeds": [0, 1, 2],
+  "selection_strategy": "top_mismatch",
+  "max_steps_per_run": 8,
+  "topk_values": [1, 3, 5],
+  "device": "auto",
+  "trust_remote_code": false
+}

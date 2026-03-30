@@ -1,0 +1,22 @@
+{
+  "run_tag": "default",
+  "model_name": "gpt2",
+  "dataset": {
+    "name": "wikitext",
+    "config_name": "wikitext-103-v1",
+    "split": "validation",
+    "text_field": "text"
+  },
+  "reference_precision": "fp32",
+  "target_precisions": ["bf16", "fp16"],
+  "sequence_lengths": [128, 512, 1024],
+  "seeds": [0, 1, 2],
+  "max_sequences_per_run": 96,
+  "batch_size": 1,
+  "stride": 0,
+  "softmax_row_samples": 16,
+  "softmax_power_iters": 2,
+  "trend_bins": 12,
+  "device": "auto",
+  "trust_remote_code": false
+}
